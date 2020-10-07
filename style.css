@@ -1,0 +1,67 @@
+#logo{
+	position: fixed;
+	margin-top:10px;
+	margin-left: 10px;
+	z-index: 10;
+	float: left;
+	width:160px;
+	height:80px;
+}
+
+#grupo{
+	position: fixed;
+	margin-top:10px;
+	margin-right:10px;
+	z-index: 10;
+	float: right;
+	width:160px;
+	height:80px;
+}
+
+header{
+	background-image:;
+	width:1200px;
+	height:100px;
+}
+
+.BestJob{
+	height: 250px;
+	width: 200px;
+	box-shadow: 0 0 10px #777;
+	border-radius: 10px;
+}
+
+#Facebook{
+	height:40px;
+	widht: 40px;
+	float: left;
+	margin: 10px 20px;
+}
+
+#Instagram{
+	height:40px;
+	widht: 40px;
+	float: left;
+	margin: 10px 20px;
+}
+
+#Youtube{
+
+	height:40px;
+	widht: 40px;
+	float: left;
+	margin: 10px 20px;
+}
+
+#Copy{
+	height:40px;
+	widht: 40px;
+	float: left;
+	margin: 10px 20px;
+}
+
+footer{
+	height: 60px;
+	width: 1200px;
+	background-color: grey;
+}
