@@ -1,88 +1,204 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<tittle>EL VIVE</tittle>
-		<meta name="description" 
-		  content="A Web Site That Describes The Group Of EL VIVE"/>
-		<meta http-equiv="author" 
-		  content="Wilito Max"/>
-		<link href="styles.css" type="text/css" rel="stylesheet"/>
-	</head>
-	<body>
-		<header>
-			<!--fondo virtual, logo y logo de grupo-->
-			<img src="" alt="Logo El Vive" id="Logo">
-			<img src="" alt="Grupo de Trabajo" id="Grupo">
-		</header>
-	
-		<div class="BestJob">
-			<iframe 
-			src="">
-			<!--facebook,instagram,y Youtube si tienen-->
-			</iframe>
-			</div>
-			
-		<div class="BestJob">
-			<iframe 
-			src="">
-			<!--facebook,instagram,y Youtube si tienen-->
-			</iframe>
-			</div>
+  <head>
+    <title>El VIVE</title>
+    <meta name="description" content="A Web Site That Describes The Group Of EL VIVE">
+    <meta http-equiv="author" content="Wilito Max">
 
-		<div class="BestJob">
-			<iframe 
-			src="">
-			<!--facebook,instagram,y Youtube si tienen-->
-			</iframe>
-			</div>
-			
-		<div class="BestJob">
-			<iframe 
-			src="">
-			<!--facebook,instagram,y Youtube si tienen-->
-			</iframe>
-			</div>
-			
+          <style>
 
-		<div id="About buttom"> 
-			<!--el about us el aprendido del  curso de harvad pero con el formato de html-->
-			<buttom>Lider</buttom>
-			<buttom>Videos</buttom>
-			<buttom>Fotos</buttom>
-			<buttom>Mensajes</buttom>
-		</div>
-		<div id="Lider">
-			<img src="" alt="Lider">
-			<h1>Lider Nombre</h1>
-			<p>Description <!--si es mucho pasar a una lista--></p>
-		</div>
-		<div id="Videos">
-			<img src="" alt="Videos">
-			<h1>Lider Nombre</h1>
-			<p>Description <!--si es mucho pasar a una lista--></p>
-			<!--si son varios los agregamos despues-->
-		</div>
-		<div id="Fotos">
-			<img src="" alt="Fotos">
-			<h1>Lider Nombre</h1>
-			<p>Description <!--si es mucho pasar a una lista--></p>
-			<!--si son varios los agregamos despues-->
-		</div>
-		<div id="Mensajes">
-			<img src="" alt="Mensajes">
-			<h1>Lider Nombre</h1>
-			<p>Description <!--si es mucho pasar a una lista--></p>
-			<!--si son varios los agregamos despues-->
-		</div>
-		<footer>
-			<!-- Color de fondo, y los copie right, y las redes sociales-->
-			<a href="<!--facebook-->" id="Facebook">
-			<img src="" alt="Facebook"></a>
-			<a href="<!--instagram-->" id="Instagram">
-			<img src="" alt="Instagram"></a>
-			<a href="<!--Youtube si tienen-->" id="Youtube">
-			<img src="" aly="Youtube"></a>
-			<p id="Copy">&copy; EL VIVE</p>
-		</footer>
-	</body>
+          header{
+            height: 150px;
+            width: auto;
+            background-image: image("fondo");
+          }
+
+          #Logo{
+            height: 75px;
+            width: 75px;
+            margin-left: 90px;
+            margin-top: 55px;
+            margin-bottom: 15px;
+          }
+
+          #Grupo{
+            height: 75px;
+            width: 75px;
+            margin-left: 1000px;
+            margin-top: 55px;
+            margin-bottom: 15px;
+          }
+
+          iframe{
+            height: 300px;
+            width: 250px;
+            margin-left: 60px;
+            margin-top: 100px;
+            border-radius: 25px;
+          }
+
+          button{
+            height: 50px;
+            width: 100px;
+            margin: 100px auto 25px auto;
+            font-family: cursive;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+            border-bottom: Black solid 5px;
+          }
+
+          div{
+            display: none;
+            height: auto;
+            width: 850px;
+            border: grey solid 1px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            margin: 0px auto 10px auto;
+          }
+
+          img{
+            float: left;
+            margin-right: 10px;
+          }
+
+          footer{
+            background-color: grey;
+            height: 150px;
+            width: auto;
+          }
+
+          #Facebook{
+            height: 35px;
+            width: 35px;
+            margin-left: 25px;
+            margin-top: 25px;
+            display: inline-block;
+          }
+
+          #Instagram{
+            height: 35px;
+            width: 35px;
+            margin-left: 50px;
+            margin-top: 25px;
+            display: inline-block;
+          }
+
+          #Copy{
+            font-family: sans-serif;
+            font-size: 12px;
+            margin-left: 1100px;
+            display: inline-block;
+          }
+
+          </style>
+    <script>
+        function showPage(page) {
+          document.querySelectorAll('div').forEach(div => {
+            div.style.display = 'none';
+          });
+
+        document.querySelector(`#${page}`).style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+          document.querySelectorAll('button').forEach(button => {
+            button.onclick = function() {
+              showPage(this.dataset.page);
+            };
+          });
+        });
+    </script>
+  </head>
+    <body>
+      <header>
+        <!--Logo y grupo de trabajo sera por medio de html y el fondo por css-->
+        <img src="Logo" alt="Logo El Vive" id="Logo">
+        <img src="grupo" alt="Grupo de Trabajo" id="Grupo">
+      </header>
+
+        <iframe src="https://www.instagram.com/p/B-Pau7jgbC_/">
+          <!--instagram-->
+        </iframe>
+
+        <iframe src="https://www.facebook.com/114162206888471/photos/a.114236503547708/115882890049736/">
+          <!--facebook-->
+        </iframe>
+
+        <iframe src="https://www.instagram.com/p/CAy3CBuhnE6/">
+          <!--instagram-->
+        </iframe>
+
+        <iframe src="https://www.facebook.com/114162206888471/photos/a.114236503547708/163318795306145/">
+          <!--facebook-->
+        </iframe>
+
+        <br>
+
+        <iframe src="https://www.instagram.com/p/CBYLUBFBNTR/">
+          <!--instagram-->
+        </iframe>
+
+        <iframe src="https://www.facebook.com/114162206888471/photos/a.162121932092498/163466955291329/">
+          <!--facebook-->
+        </iframe>
+
+        <iframe src="https://www.instagram.com/p/CGBeB3kHI-S/">
+          <!--instagram-->
+        </iframe>
+
+        <iframe src="https://www.facebook.com/114162206888471/photos/a.114236503547708/164231191881572/">
+          <!--facebook-->
+        </iframe>
+<br>
+<br>
+        <!--el button es el aprendido del  curso de harvad pero con el formato de html-->
+      <button style="visibility: hidden;">1</button>
+      <button style="visibility: hidden;">1</button>
+      <button style="visibility: hidden;">1</button>
+      <button data-page="page1">Lider</button>
+      <button data-page="page2">Video</button>
+      <button data-page="page3">Fotos</button>
+      <button data-page="page4">Mensajes</button>
+
+      <div id="page1">
+        <h1><img src="lider" alt="Lider">
+        Lider Nombre</h1>
+        <p>Description</p>
+      </div>
+
+      <div id="page2">
+        <h1><img src="Video" alt="Videos">
+        Lider Videos</h1>
+        <p>Description</p>
+      </div>
+
+      <div id="page3">
+        <h1><img src="Foto" alt="Fotos">
+        Lider Fotos</h1>
+        <p>Description</p>
+      </div>
+
+      <div id="page4">
+        <h1><img src="Mensaje" alt="Mensajes">
+        Lider Mensajes</h1>
+        <p>Description</p>
+      </div>
+
+      <footer>
+        <br>
+        <!--el fondo sera con css and las redes pues html & copy right-->
+          <a href="https://www.facebook.com/%C3%89l-Vive-114162206888471" id="Facebook">
+            <img src="face" alt="Facebook"></a>
+          <a href="https://www.instagram.com/elvive_ja/" id="Instagram">
+            <img src="insta" alt="Instagram"></a>
+          <p id="Copy">� EL VIVE</p>
+      </footer>
+
+    </body>
 </html>
+
