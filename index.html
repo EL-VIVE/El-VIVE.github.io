@@ -10,30 +10,30 @@
           header{
             height: 150px;
             width: auto;
-            background-image: image("fondo");
+            background-image: url(fondo.png);
           }
 
           #Logo{
-            height: 75px;
-            width: 75px;
-            margin-left: 90px;
-            margin-top: 55px;
+            height: 150px;
+            width: 150px;
+            margin-left: 25px;
+            margin-top: 2px;
             margin-bottom: 15px;
+            display: inline-block;
           }
 
           #Grupo{
-            height: 75px;
-            width: 75px;
-            margin-left: 1000px;
-            margin-top: 55px;
-            margin-bottom: 15px;
+            height: 105px;
+            width: 170px;
+            margin-left: 950px;
+            margin-top: 22px;
+            display: inline-block;
           }
 
           iframe{
             height: 300px;
             width: 250px;
-            margin-left: 60px;
-            margin-top: 100px;
+            margin: 100px 0px auto 20px;
             border-radius: 25px;
           }
 
@@ -73,25 +73,25 @@
           }
 
           #Facebook{
-            height: 35px;
-            width: 35px;
+            height: 50px;
+            width: 50px;
             margin-left: 25px;
             margin-top: 25px;
             display: inline-block;
           }
 
           #Instagram{
-            height: 35px;
-            width: 35px;
-            margin-left: 50px;
-            margin-top: 25px;
+            height: 50px;
+            width: 100px;
+            margin-top: 27px;
             display: inline-block;
           }
 
           #Copy{
             font-family: sans-serif;
-            font-size: 12px;
-            margin-left: 1100px;
+            font-size: 16px;
+            margin-left: 1000px;
+            margin-top: 45px;
             display: inline-block;
           }
 
@@ -117,11 +117,10 @@
     <body>
       <header>
         <!--Logo y grupo de trabajo sera por medio de html y el fondo por css-->
-        <img src="Logo" alt="Logo El Vive" id="Logo">
-        <img src="grupo" alt="Grupo de Trabajo" id="Grupo">
+        <img src="Logo.png" alt="Logo El Vive" id="Logo">  <img src="grupo.png" alt="Grupo de Trabajo" id="Grupo">
       </header>
 
-        <iframe src="https://www.instagram.com/p/B-Pau7jgbC_/">
+        <iframe style="margin-left:70px;" src="https://www.instagram.com/p/B-Pau7jgbC_/">
           <!--instagram-->
         </iframe>
 
@@ -133,17 +132,9 @@
           <!--instagram-->
         </iframe>
 
-        <iframe src="https://www.facebook.com/114162206888471/photos/a.114236503547708/163318795306145/">
-          <!--facebook-->
-        </iframe>
-
         <br>
 
-        <iframe src="https://www.instagram.com/p/CBYLUBFBNTR/">
-          <!--instagram-->
-        </iframe>
-
-        <iframe src="https://www.facebook.com/114162206888471/photos/a.162121932092498/163466955291329/">
+        <iframe style="margin-left:250px;" src="https://www.facebook.com/114162206888471/photos/a.162121932092498/163466955291329/">
           <!--facebook-->
         </iframe>
 
@@ -160,43 +151,44 @@
       <button style="visibility: hidden;">1</button>
       <button style="visibility: hidden;">1</button>
       <button style="visibility: hidden;">1</button>
+      <button style="visibility: hidden; margin-left:30px;">1</button>
       <button data-page="page1">Lider</button>
       <button data-page="page2">Video</button>
       <button data-page="page3">Fotos</button>
       <button data-page="page4">Mensajes</button>
 
       <div id="page1">
-        <h1><img src="lider" alt="Lider">
+        <h1 style="font-size:32px;"><img src="lider.jpg" alt="Lider" style="margin-left: 20px; height:150px; width:50; border-radius:20px;">
         Lider Nombre</h1>
-        <p>Description</p>
+        <p style="font-size:24px;">Description<br/>bla bla <br/> bla bla</p>
       </div>
 
       <div id="page2">
-        <h1><img src="Video" alt="Videos">
+        <h1 style="font-size:32px;"><img src="Video.jpg" alt="Videos" style="margin-left: 20px; height:150px; width:50; border-radius:20px;">
         Lider Videos</h1>
-        <p>Description</p>
+        <p style="font-size:24px;">Description<br/>bla bla <br/> bla bla</p>
       </div>
 
       <div id="page3">
-        <h1><img src="Foto" alt="Fotos">
+        <h1 style="font-size:32px;"><img src="Foto.jpg" alt="Fotos" style="margin-left: 20px; height:150px; width:50; border-radius:20px;">
         Lider Fotos</h1>
-        <p>Description</p>
+        <p style="font-size:24px;">Description<br/>bla bla <br/> bla bla</p>
       </div>
 
       <div id="page4">
-        <h1><img src="Mensaje" alt="Mensajes">
+        <h1 style="font-size:32px;"><img src="Mensaje.jpg" alt="Mensajes" style="margin-left: 20px; height:150px; width:50; border-radius:20px;">
         Lider Mensajes</h1>
-        <p>Description</p>
+        <p style="font-size:24px;">Description<br/>bla bla <br/> bla bla</p>
       </div>
 
       <footer>
         <br>
         <!--el fondo sera con css and las redes pues html & copy right-->
-          <a href="https://www.facebook.com/%C3%89l-Vive-114162206888471" id="Facebook">
-            <img src="face" alt="Facebook"></a>
-          <a href="https://www.instagram.com/elvive_ja/" id="Instagram">
-            <img src="insta" alt="Instagram"></a>
-          <p id="Copy">� EL VIVE</p>
+          <a href="https://www.facebook.com/%C3%89l-Vive-114162206888471">
+            <img src="face.png" alt="Facebook" id="Facebook"></a>
+          <a href="https://www.instagram.com/elvive_ja/">
+            <img src="insta.png" alt="Instagram" id="Instagram"></a>
+          <p id="Copy">&copy; EL VIVE</p>
       </footer>
 
     </body>
